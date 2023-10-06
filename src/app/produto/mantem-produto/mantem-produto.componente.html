@@ -1,0 +1,18 @@
+<mat-card class="card-cadastro-produto">
+    <mat-card-content>
+      <mat-form-field appearance="fill">
+        <input matInput [(ngModel)]="produtoDeManutencao._id" placeholder="Digite o ID do produto">
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <input matInput [(ngModel)]="produtoDeManutencao._nome" placeholder="Digite a idade">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <input matInput [(ngModel)]="produtoDeManutencao._categoria" placeholder="Digite o CPF">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="manter()">{{nomeBotaoManutencao}}</button>
+    </mat-card-actions>
+  </mat-card>
+  
